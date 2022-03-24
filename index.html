@@ -5,11 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SquareBoat-clone</title>
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-    <!-- --------navbar------- -->
-    <section class="navbar">
-        
+       <section class="header">
+         <!-- --------navbar------- -->
+        <nav class="navbar">
+            <a href="index.html"> <img src="./Media/images/WhatsApp Image 2022-03-24 at 1.47.49 PM.jpeg" alt="error"></a>
+            <div class="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href=" ">Our Work</a></li>
+                    <li><a href=" ">Services</a></li>
+                    <li><a href=" ">Crew++</a></li>
+                    <li><a href=" ">Our Team</a></li>
+                    <li><a href=" ">Labs</a></li>
+                    <li><a href=" ">Open Source</a></li>
+                    <li><a href=" ">Careers</a></li>
+                    <li><a class="nav-links-highlight" href="#"> Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    <section id="home">
+        <div class="home-content">
+            <div class="hleft">
+                <h1>Great products for great ideas.</h1>
+                <h5>We build beautiful and scalable web and mobile applications.</h5>
+                <button>See Our Work</button>
+            </div>
+            <div class="hright">
+                <img src="./Media/images/hero-illustration.svg" alt="">
+            </div>
+        </div>
     </section>
 </body>
 </html>
