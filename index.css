@@ -23,9 +23,6 @@
 .header{
     width: 100%;
 }
-.navbar{
-    
-}
 nav{
     display: flex;
     padding: 3% 8%;
@@ -135,4 +132,16 @@ padding: 10px;
     width: 100%;
     overflow: hidden;
     transform: rotate(-9deg) translateY(-40px) translateX(-35px);
+    z-index: 1;
+}
+/* our clients styling */
+.our-clients{
+    background: #8faedb;
+    transform: skew(0deg, -10deg) translateY(-120px);
+}
+#clients-content h1{
+    font-size: 5rem;
+    width: 100%;
+    transform: skew(0deg, 10deg);
+    color: rgb(220, 234, 255);
 }
