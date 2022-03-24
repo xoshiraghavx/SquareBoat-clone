@@ -1,5 +1,138 @@
+/* General styling */
 *{
-    box-sizing: border-box;
-    padding: 0%;
-    margin: 0%;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+/* Importing Fonts  */
+@font-face {
+    font-family: "circularL";
+    src: url("../Media/Fonts/Circular/CircularStd-Light.otf");
+  }
+  @font-face {
+    font-family: "circularM";
+    src: url("../Media/Fonts/Circular/CircularStd-Book.otf");
+  }
+  @font-face {
+    font-family: "circularB";
+    src: url("../Media/Fonts/Circular/CircularStd-Black.otf");
+  }  
+
+/* Navbar styling */
+.header{
+    width: 100%;
+}
+.navbar{
+    
+}
+nav{
+    display: flex;
+    padding: 3% 8%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 180px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: rgb(119, 115, 115);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 40%;
+    height: 3px;
+    opacity: 0;
+    background: #b6d4fc;
+    display: block;
+    margin:0 auto;
+    margin-top: 5px;
+    transition:all 0.2s ease-in-out;
+}
+.nav-links ul li:hover::after{
+    width: 30%;
+    opacity: 1;
+}
+.nav-links-highlight{
+background: #e9f2fc;
+color: #2d94f3 !important;
+border-radius: 0.24rem;
+padding: 10px;
+}
+
+/* Home Section Styling  */
+#home{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    padding-bottom: 6rem;
+    width: 87%;
+}
+.hleft {
+    width: 50%;
+    padding-left: 25px;
+    padding-right: 10px;
+}
+.hleft h1 {
+    line-height: 1.3;
+    letter-spacing: 1px;
+    font-size: 2.6rem;
+    font-family: "circularM";
+    color: #0D264C;
+}
+.hleft h5 {
+    line-height: 32px;
+    letter-spacing: 0.02rem;
+    font-size: 1.15rem;
+    padding-top: 13px;
+    max-width: 80%;
+    color: #0D264C;
+    font-family: "circularL";
+}
+.hleft button {
+    padding: 13px 15px;
+    font-size: 1rem;
+    background: transparent;
+    border: 2px solid #3396ff;
+    color: #3396ff;
+    border-radius: 5px;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-family: "circularM";
+}
+.hleft button:hover {
+      color: white;
+      background: #3396ff;
+}
+.hright {
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+}
+.hright img {
+    width: 100%;
+    overflow: hidden;
+    transform: rotate(-9deg) translateY(-40px) translateX(-35px);
 }
