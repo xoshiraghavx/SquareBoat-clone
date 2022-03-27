@@ -137,17 +137,22 @@ padding: 10px;
 }
 /* our clients styling */
 .our-clients{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: #F4F5FF;
     transform: skew(0deg, -10deg) translateY(-120px);
     padding-bottom: 6%;
     padding-top: 6%;
 }
 #clients-content h1{
-    font-size: 5rem;
+    font-size: 5.69rem;
     padding-top: 8%;
     transform: skew(0deg, 10deg);
     color: rgb(206, 223, 250);
     text-align: center;
+    margin: 0;
 }
 #clients h3{
     transform: skew(0deg, 10deg); 
@@ -165,15 +170,13 @@ padding: 10px;
 }
 .clients-container{
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    transform: skew(0deg, 10deg);
-    padding: 2%;
+    grid-template-columns: repeat(4 ,1fr);
+    grid-column-gap: 100px;
+    transform: skew(0deg, 10deg); 
 }
-.grid-item {
-    width: 30%;
-    align-items: center;
-    justify-items: center;
-    white-space: nowrap;
+.clients-container img{
+    height: 150px;
+    width: 150px;
 }
 .button button{
     transform: skew(0deg, 10deg);
@@ -192,3 +195,4 @@ padding: 10px;
     color: white;
     background: #3396ff;
 }
+
